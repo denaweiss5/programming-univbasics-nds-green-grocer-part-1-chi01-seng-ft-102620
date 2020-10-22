@@ -2,7 +2,8 @@ def find_item_by_name_in_collection(name, test_cart)
   test_cart.each do |item_name|
     while name == [:test_cart][:item]
       do   [:test_cart][:item]
-    end 
+    end
+  end
 end
 
 def consolidate_cart(cart)
