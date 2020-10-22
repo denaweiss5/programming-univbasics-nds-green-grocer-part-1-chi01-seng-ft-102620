@@ -1,8 +1,10 @@
-def find_item_by_name_in_collection(name, test_cart)
-  test_cart.each do |item_name|
-    if name == [:test_cart][:item]
-      [:test_cart][:item]
+def find_item_by_name_in_collection(name, collection)
+  counter = 0
+  while counter > collection.length do
+    if collection[counter][:item] == name
+      return collection[counter]
     end
+    counter += 1
   end
 end
 
